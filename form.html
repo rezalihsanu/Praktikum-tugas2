@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IF=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rezal Ihsanu Mubarok">
+    <meta name="keyword" content="Belajar HTML, Belajar Web">
+    <meta name="description" content="Tugas Modul 2">
+    <meta name="robots" content="index, follow">
+
+    <title>Tugas Modul 2/Rezal Ihsanu Mubarok/1204230070/IS 06-01</title>
+
+    <div>
+        <style>
+            /*GARIS TEPI HITAM */
+            .form-section {
+                margin-bottom: 20px;
+                padding: 20px;
+                border: 2px solid #000;
+                position: relative;
+            }
+
+            /*menempatkan heading di atas garis*/
+            .form-section h3 {
+                position: absolute;
+                top: -30px;
+                left: 15px;
+                background: white;
+                padding: 0 10px;
+            }
+
+            /*memberi jarak antar tulisan dengan kolom input*/
+            label {
+                display: inline-block;
+                width: 200px;
+            }
+        </style>
+    </div>
+</head>
+
+<body>
+
+    <div>
+        <h1>Form Registrasi</h1>
+
+        <!--BIODATA-->
+        <div class="form-section">
+            <h3>Biodata</h3>
+            <label><strong>Nama Mahasiswa</strong></label><span class="colon">:</span><input type="text"
+                name="text_form" size="20" placeholder="Nama Anda"><br><br>
+            <label><strong>No induk Mahasiswa (NIM)</strong></label><span class="colon">:</span><input type="text"
+                name="disabled_form" size="20" value="1234567" disabled><br><br>
+            <label><strong>Alamat Mahasiswa</strong></label><span class="colon">:</span><textarea name="textarea_form"
+                cols="40" rows="6" placeholder="Alamat Anda"></textarea></label><br><br>
+            <label><strong>Tanggal Lahir</strong></label><span class="colon">:</span><input type="date"><br><br>
+            <label><strong>Jenis Kelamin</strong></label><span class="colon">:</span>
+            <input type="radio" name="radio" value="radio1" id="radio1" checked><label for="radio1">Pria</label>
+            <input type="radio" name="radio" value="radio2" id="radio2" checked><label
+                for="radio2">Wanita</label></label><br><br>
+            <label><strong>Upload Foto</strong></label><span class="colon">:</span><input type="file"
+                name="file"><br><br>
+            <label><strong>URL Website</strong></label><span class="colon">:</span><input type="=text" name="text_form"
+                size="20" placeholder="URL Website Anda"><br><br>
+            <label><strong>Perguruan Tinggi</strong></label><span class="colon">:</span><input type="=text"
+                name="text_form" size="20"><br><br>
+        </div>
+    </div>
+    <!--INFO AKUN-->
+    <div class="form-section">
+        <h3>Info Akun</h3>
+        <label><strong>Email :</strong></label><input type="=text" name="text_form" size="20"
+            placeholder="Email Anda"><br><br>
+        <label><strong>Username :</strong></label><input type="=text" name="text_form" size="20"
+            placeholder="Username Anda"><br><br>
+        <label><strong>Password :</strong></label><input type="=text" name="text_form" size="20"
+            placeholder="Password Anda"><br><br>
+        <label><strong>Ulangi Password :</strong></label><input type="=text" name="text_form" size="20"
+            placeholder="Password Anda"><br><br>
+
+    </div>
+    <!--Kemampuan Dasar-->
+    <div class="form-section">
+        <h3>Kemampuan Dasar</h3>
+        <input type="checkbox" name="checkbox1" value="checkbox1" id="checkbox1"><label for="checkbox1">HTML</label>
+        <input type="checkbox" name="checkbox2" value="checkbox2" id="checkbox2"><label for="checkbox2">CSS</label>
+        <input type="checkbox" name="checkbox3" value="checkbox3" id="checkbox3"><label
+            for="checkbox3">Javascript</label>
+        <input type="checkbox" name="checkbox4" value="checkbox4" id="checkbox4"><label for="checkbox4">PHP</label>
+        <input type="checkbox" name="checkbox5" value="checkbox5" id="checkbox5"><label for="checkbox5">MySQL</label>
+        <input type="checkbox" name="checkbox6" value="checkbox6" id="checkbox6"><label for="checkbox6">Laravel</label>
+        <input type="checkbox" name="checkbox7" value="checkbox7" id="checkbox7"><label
+            for="checkbox7">ReactNative</label>
+    </div>
+
+    <!--Buttons-->
+    <div>
+        <button type="reset">reset</button>
+        <button type="submit">Simpan</button>
+        <button type="button">Button</button>
+    </div>
+
+</body>
+
+</html>
